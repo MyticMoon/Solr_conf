@@ -597,7 +597,7 @@
    Analysis request handler.  Since Solr 1.3.  Use to returnhow a document is analyzed.  Useful
    for debugging and as a token server for other types of applications
    -->
-  <requestHandler name="/analysis" class="solr.AnalysisRequestHandler" >
+  <requestHandler name="/analysis" class="solr.FieldAnalysisRequestHandler" >
     <!--
     <str name="update.processor.class">org.apache.solr.handler.UpdateRequestProcessor</str>
     -->

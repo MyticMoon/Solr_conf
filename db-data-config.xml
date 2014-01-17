@@ -1,5 +1,5 @@
 <dataConfig>
-    <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/eComm1" user="eComm" password="kf03a23h" />
+    <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/shoes_db" user="root" password="root" />
     <document>
             <entity name="products" query="select t.product_id AS product_id, t.cid AS cid, c.name as category_name, t.name as product_name, t.price AS price, t.description AS product_desc, t.product_url AS url, t.brand AS brand, t.merchant AS merchant, t.color AS color, i.img_id AS img_id, i.pic_url AS pic_url, i.pic_path AS pic_path, i.img_type AS img_type from products t, images i, categories c where t.product_id=i.product_id and c.cid=t.cid">
             </entity>

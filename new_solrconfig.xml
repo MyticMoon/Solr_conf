@@ -15,6 +15,7 @@
 
   <lib dir="../../contrib/velocity/lib" regex=".*\.jar" />
   <lib dir="../../dist/" regex="solr-velocity-\d.*\.jar" /> 
+  <lib dir="../../lib/" regex="mysql-connector-java-\d.*\.jar" /> 
   <dataDir>${solr.data.dir:}</dataDir>
   <directoryFactory name="DirectoryFactory" 
                     class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}"/> 

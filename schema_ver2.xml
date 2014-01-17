@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<schema name="sire" version="1.0">
+<schema name="sire" version="1.5">
   <!-- EnglishPorterFilterFactory is replaced by KeywordMarkerFilterFactory -->
   <!-- attribute "name" is the name of this schema and is only used for display purposes.
        1.0: multiValued attribute did not exist, all fields are multiValued by nature
@@ -459,10 +459,10 @@
    -->
 
    <field name="product_id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-   <field name="cid" type="integer" indexed="true" stored="true"/>
+   <field name="cid" type="int" indexed="true" stored="true"/>
    <field name="category_name" type="chineseText" indexed="true" stored="true"/>
    <field name="product_name" type="chineseText" indexed="true" stored="true"/>
-   <field name="price" type="sdouble" indexed="true" stored="true"/>
+   <field name="price" type="double" indexed="true" stored="true"/>
    <field name="product_desc" type="chineseText" indexed="true" stored="true"/>
    <field name="url" type="string" indexed="true" stored="true"/>
    <field name="brand" type="string" indexed="true" stored="true"/>

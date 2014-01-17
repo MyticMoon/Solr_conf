@@ -1,0 +1,28 @@
+1) Indexing
+Create an index from the database:
+http://localhost:8080/apache-solr-1.4.1/dataimport?command=full-import
+
+Check the status of the indexing process:
+http://localhost:8080/apache-solr-1.4.1/dataimport
+
+2) Basic Searching
+Search for a query:
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010&version=2.2&start=0&rows=10&indent=on
+
+3) Searching with sorting based on a field
+Search for a query sort by ascending price:
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010&version=2.2&start=0&rows=10&indent=on&sort=price+asc
+
+4) Searching with sorting and filtering
+Search for a query with post fee $5.0 and sort price in ascending order
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010 AND post_fee:5.0&version=2.2&start=0&rows=10&indent=on&sort=price+asc
+
+5) Search with highlighting of relevant terms
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010&version=2.2&start=0&rows=10&indent=on&hl=true
+
+6) Search with sorting and filtering based on range
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010%20AND%20price:[200%20TO%20500]&version=2.2&start=50&rows=10&indent=on&sort=price+asc
+*Note that %20 is equivalent to space
+
+7) Multiple filtering with sorting
+http://localhost:8080/apache-solr-1.4.1/select/?q=2010%20AND%20post_fee:5.0%20AND%20price:[200%20TO%20500]&version=2.2&start=0&rows=30&indent=on&sort=price+asc

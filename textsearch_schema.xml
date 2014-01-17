@@ -218,7 +218,7 @@
        best performance.
    -->
 
-   <field name="product_id" type="string" indexed="true" stored="true" required="true" /> 
+   <field name="product_id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
    <field name="cid" type="integer" indexed="true" stored="true"/>
    <field name="category_name" type="chineseText" indexed="true" stored="true"/>
    <field name="product_name" type="chineseText" indexed="true" stored="true"/>
